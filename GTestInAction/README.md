@@ -73,3 +73,6 @@ int main(int argc, char** argv)
 TEST宏有两个参数，第一个称作是测试用例名称，第二个称作是测试名称，测试用例名称表示对某一个函数或者类的测试，用来标识某种行为的测试；测试名称表示的是一个测试用例下的某一个测试的名称，对应一个测试体。比如，上面对Factorial函数的测试用例，用例名称直接在函数名后面添加了一个Test，表示，这个测试用例是对应这个函数，后面的名字可以根据测试内容设定，比如这里分了两类，一种是正常值测试，一种是非正常值测试。（函数比较简单，所以测试划分比较粗暴）。
 
 在main函数中，有两行代码，第一行是初始化Google Test，第二行是运行所有测试。
+
+下面是上面测试运行结果：
+![结果](https://github.com/zhangxiaoya/GTestInAction/tree/master/GTestInAction/sample1Result.JPG)

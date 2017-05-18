@@ -37,3 +37,7 @@ cmake GTEST-BUILD-SAMPLES=ON ..  # 参数表示要编译样例代码
 在Applications目录下创建一个叫做gtest目录，然后在这里创建两个目录include和lib。将GTESTROOT目录下的include里面的内容拷贝到这个include目录下，将gtest.lib文件拷贝到lib目录。
 
 到目前为止，Google Test测试框架就编译构建完成了。
+
+## 练习使用Google Test Step by Step
+
+1. [初步使用gtest](https://github.com/zhangxiaoya/GTestInAction/tree/master/GTestInAction)
