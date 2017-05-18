@@ -14,6 +14,24 @@ TEST(UtilAddIntegerTest, normalTest)
 	EXPECT_EQ(2, Util::AddInteger(1, 1));
 }
 
+TEST(UtilOddTest, zeroTest)
+{
+	EXPECT_FALSE(Util::IsOdd(0));
+}
+
+TEST(UtilOddTest, normalTest)
+{
+	EXPECT_TRUE(Util::IsOdd(1));
+	EXPECT_FALSE(Util::IsOdd(2));
+}
+
+TEST(UtilStringTest, firstTest)
+{
+	string firstStr = "Hello";
+	string secondStr = "Google";
+	EXPECT_STREQ("HelloGoogle", Util::MergeStr(firstStr,secondStr).c_str());
+}
+
 int main(int argc, char** argv)
 {
 	::testing::InitGoogleTest(&argc, argv);
