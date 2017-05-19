@@ -75,4 +75,4 @@ TEST宏有两个参数，第一个称作是测试用例名称，第二个称作�
 在main函数中，有两行代码，第一行是初始化Google Test，第二行是运行所有测试。
 
 下面是上面测试运行结果：
-![结果](https://github.com/zhangxiaoya/GTestInAction/tree/master/GTestInAction/sample1Result.JPG)
+![结果](https://github.com/zhangxiaoya/GTestInAction/blob/master/GTestInAction/sample1Result.JPG)
