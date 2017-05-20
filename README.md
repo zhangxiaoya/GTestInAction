@@ -40,3 +40,4 @@ cmake GTEST-BUILD-SAMPLES=ON ..  # 参数表示要编译样例代码
 ## 练习使用Google Test Step by Step
 
 1. [初步使用gtest](https://github.com/zhangxiaoya/GTestInAction/tree/master/GTestInAction)
+2. [关于断言](https://github.com/zhangxiaoya/GTestInAction/tree/master/ActionTwo)
