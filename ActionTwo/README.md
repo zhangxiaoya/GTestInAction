@@ -109,4 +109,4 @@ TEST(UtilStringTest, firstTest)
 
 下面是测试执行结果。
 
-![结果](https://github.com/zhangxiaoya/GTestInAction/blob/master/ActionTwo/testResult.JPG)
+![结果](https://github.com/zhangxiaoya/GTestInAction/blob/master/ActionTwo/testResult.PNG)
