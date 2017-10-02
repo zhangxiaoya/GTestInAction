@@ -21,6 +21,7 @@ int GlobalAdd(int a, int b)
     return a + b;
 }
 ```
+
 然后，修改项目属性，将General-> Congifuration Type修改成Dynamic Library，默认是Application。
 
 模拟项目就完成了。
@@ -36,13 +37,13 @@ int GlobalAdd(int a, int b)
 
 TEST(DynamicTes, test)
 {
-	EXPECT_EQ(2,GlobalAdd(1, 1));
+    EXPECT_EQ(2,GlobalAdd(1, 1));
 }
 
 int main(int argc, char** argv)
 {
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
 ```
 
@@ -51,3 +52,36 @@ int main(int argc, char** argv)
 然后就可以运行了。
 如下图所示，表示运行结果：
 ![动态库测试结果](https://github.com/zhangxiaoya/GTestInAction/blob/master/ActionFour/dynamicTestResult.PNG)
+
+## 创建模拟静态库工程
+
+静态库的测试与动态库的测试一样，不同的是，不想动态库添加到处动态库的声明，如下是静态库的测试代码：
+
+```C++
+// StaticSample.h
+#pragma once
+
+int GlobalMinus(int a, int b);
+```
+
+```C++
+#include "../Headers/StaticSample.h"
+
+int GlobalMinus(int a, int b)
+{
+    return a - b;
+}
+
+```
+
+然后，修改测试工程，添加测试静态库的代码：
+
+```C++
+TEST(StaticLibaray, test)
+{
+    EXPECT_EQ(1, GlobalMinus(2, 1));
+}
+```
+
+如下图所示，表示测试结果：
+![静态库测试结果](https://github.com/zhangxiaoya/GTestInAction/blob/master/ActionFour/staticTestResult.PNG)
