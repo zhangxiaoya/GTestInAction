@@ -49,3 +49,5 @@ int main(int argc, char** argv)
 在当前的测试工程，添加reference，把刚刚的创建的模拟工程添加到reference。
 
 然后就可以运行了。
+如下图所示，表示运行结果：
+![动态库测试结果](https://github.com/zhangxiaoya/GTestInAction/blob/master/ActionFour/dynamicTestResult.PNG)
