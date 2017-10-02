@@ -42,3 +42,4 @@ cmake GTEST-BUILD-SAMPLES=ON ..  # 参数表示要编译样例代码
 1. [初步使用gtest](https://github.com/zhangxiaoya/GTestInAction/tree/master/GTestInAction)
 2. [关于断言](https://github.com/zhangxiaoya/GTestInAction/tree/master/ActionTwo)
 3. [使用Fixture](https://github.com/zhangxiaoya/GTestInAction/tree/master/ActionThree)
+4. [独立测试工程](https://github.com/zhangxiaoya/GTestInAction/tree/master/ActionFour)
